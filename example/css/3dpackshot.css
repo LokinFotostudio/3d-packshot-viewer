@@ -1,0 +1,91 @@
+.reelContainer {
+  border-bottom: 1px solid #ddd;
+  width: 700px;
+  height: 350px;
+  box-sizing: content-box;
+}
+
+.reelPlaceholder {
+  margin: auto;
+}
+
+.sequenceThumbnailsContainer {
+  float: right;
+  box-sizing: content-box;
+  width: 365px;
+}
+
+.sequenceThumbnail {
+  border: 1px solid #ddd;
+  margin: 0 0 10px 10px;
+  cursor: pointer;
+  width: 170px;
+  height: 120px;
+  box-sizing: content-box;
+}
+
+.controlsContainer .sliderContainer {
+  margin: 5px 0;
+}
+
+.controlsContainer .sliderContainer .slider {
+    border: none;
+    background: url('../img/slider-background.png') center no-repeat;
+    width:233px;
+    height: 25px;
+}
+
+.controlsContainer .sliderContainer .slider .ui-slider-handle {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    top: 0px;
+    background: url('../img/zoom-small.png') center no-repeat;
+}
+
+.packshotViewerContainer {
+  border: 1px solid #ddd;
+  float: left;
+}
+
+.controlsContainer div {
+  float: left;
+}
+
+.controlsContainer button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    margin: 5px 0 5px 5px;
+    width: 25px;
+    height: 25px;
+    float: right;
+}
+
+#colorbox {
+    background: white;
+}
+
+.highres-cached {
+    display: none;
+}
+
+.controlsContainer .move.active {background-image: url('../img/drag-small-active.png'); background-position: center; background-repeat: no-repeat;}
+.controlsContainer .move.inactive {background-image: url('../img/drag-small-inactive.png'); background-position: center; background-repeat: no-repeat;}
+.controlsContainer .move.inactive:hover {background-image: url('../img/drag-small-active.png'); background-position: center; background-repeat: no-repeat;}
+
+.controlsContainer .rotate.active {background-image: url('../img/rotate-small-active.png'); background-position: center; background-repeat: no-repeat;}
+.controlsContainer .rotate.inactive {background-image: url('../img/rotate-small-inactive.png'); background-position: center; background-repeat: no-repeat;}
+.controlsContainer .rotate.inactive:hover {background-image: url('../img/rotate-small-active.png'); background-position: center; background-repeat: no-repeat;}
+
+.controlsContainer .center {background-image: url('../img/center-small.png'); background-position: center; background-repeat: no-repeat;}
+.controlsContainer .center:hover {background-image: url('../img/center-small-hover.png'); background-position: center; background-repeat: no-repeat;}
+
+.controlsContainer .inline {background-image: url('../img/fullscreen-small.png'); background-position: center; background-repeat: no-repeat;}
+.controlsContainer .inline:hover {background-image: url('../img/fullscreen-small-hover.png'); background-position: center; background-repeat: no-repeat;}
+
+.controlsContainer .fsout {background-image: url('../img/smallscreen-small.png'); background-position: center; background-repeat: no-repeat;}
+.controlsContainer .fsout:hover {background-image: url('../img/smallscreen-small-hover.png'); background-position: center; background-repeat: no-repeat;}
