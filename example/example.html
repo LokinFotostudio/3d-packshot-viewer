@@ -1,0 +1,85 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>3D-packshot Example</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.css">
+    <link rel="stylesheet" href="css/3dpackshot.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"></script>
+  </head>
+
+  <body>
+    <!--[if lt IE 9]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="container">
+      <div id="3dPackshotPlaceholder">
+        <div id="3dPackshotThumbnails"></div>
+        <div id="3dPackshotViewer"></div>
+      </div>
+    </div>
+
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+
+    <script src="../libs/jquery.colorbox.js"></script>
+    <script src="../libs/jquery.colorbox.extension.js"></script>
+    <script src="../libs/jquery.hammer.js"></script>
+    <script src="../libs/jquery.mousewheel.js"></script>
+    <script src="../libs/jquery.reel.js"></script>
+    <script src="../libs/jquery.reel.extension.js"></script>
+    <script src="../libs/jquery.ui.touch-punch.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.js"></script>
+    <script src="../3dpackshot.js"></script>
+    <script>
+      $.packshotViewer.debug = false;
+      $.packshotViewer.tooltip = "Bootstrap";
+      $.packshotViewer.data.instances = [{
+        "pin": {
+          "self": "#3dPackshotViewer",
+          "thumbs": "#3dPackshotThumbnails"
+        },
+        "galleries": [{
+          "id": 1,
+          "totalSequences": 2,
+          "default": 0,
+          "sequences": [
+            {
+              "path": "img/chair",
+              "platform": "desktop",
+              "quality": "high",
+              "frames": 36,
+              "mode": "turntable",
+              "thumbnailWidth": 170,
+              "thumbnailHeight": 120,
+              "lowResWidth": 500,
+              "lowResHeight": 656,
+              "highResWidth": 2000,
+              "highResHeight": 2626
+            },
+            {
+              "path": "img/chair",
+              "platform": "desktop",
+              "quality": "high",
+              "frames": 36,
+              "mode": "turntable",
+              "thumbnailWidth": 170,
+              "thumbnailHeight": 120,
+              "lowResWidth": 500,
+              "lowResHeight": 656,
+              "highResWidth": 2000,
+              "highResHeight": 2626
+            }
+          ]
+        }]
+      }];
+
+      $.packshotViewer.selectGallery(0, 1);
+    </script>
+  </body>
+</html>
